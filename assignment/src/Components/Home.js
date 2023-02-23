@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link , Routes} from 'react-router-dom';
 import Dashboard from './Dashboard';
 import AccountSettings from './AccountSettings';
+import CardList from './CardList';
 import {AiOutlineHome} from 'react-icons/ai';
 import {GrUserSettings} from 'react-icons/gr';
 import {GrLogin} from 'react-icons/gr';
@@ -49,7 +50,7 @@ function Home() {
                 <Link to = "" className='nav-link menuItems'><TbIcons/> Icons</Link>
                 </li>
                 <li>
-                <Link to = "" className='nav-link menuItems'><BsCreditCard2Back/>Cards</Link>
+                <Link to = "/cards" className='nav-link menuItems'><BsCreditCard2Back/>Cards</Link>
                 </li>
                 <li>
                   <Link to= "" className='nav-link menuItems'><AiOutlineTable/> Tables</Link>
@@ -65,10 +66,11 @@ function Home() {
        </div>
 
 
-       <div className='col-md-9'>
+       <div className='col-md-9 displayArea'>
           <Routes>
             <Route path="/accountSettings"  element = {<AccountSettings/>}/>
             <Route path="/"  element= {<Dashboard/>}/>
+            <Route path="/cards" element={<CardList/>}/>
           </Routes>
         
        </div>

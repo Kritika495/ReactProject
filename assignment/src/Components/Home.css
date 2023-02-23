@@ -1,7 +1,7 @@
 .sideMenu
 {
   list-style-type:none;
-  overflow-y : scroll;
+  overflow-y : scroll; 
   height: 80%;
 }
 
@@ -44,4 +44,10 @@
     width: 40%;
     display: inline-block;
     border-bottom: 1px solid gainsboro;
+}
+.displayArea
+{
+  height : 80%;
+
+  
 }
