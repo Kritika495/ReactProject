@@ -1,0 +1,47 @@
+.sideMenu
+{
+  list-style-type:none;
+  overflow-y : scroll;
+  height: 80%;
+}
+
+.sideMenu::-webkit-scrollbar {
+  background-color: gainsboro;
+  width: 1px;
+}
+
+.sideMenu::-webkit-scrollbar-thumb{
+  background-color: grey;
+}
+
+.sideMenu ::-webkit-scrollbar-thumb :hover{
+  background-color: green;
+}
+.menuItems
+{
+  padding: 5px;
+  margin: 15px;
+}
+.hr1
+{
+    
+    width: 10%;
+    display:inline-block;
+    border-bottom: 1px solid gainsboro;
+}
+.hr2{
+    width: 55%;
+    display: inline-block;
+    border-bottom: 1px solid gainsboro;
+}
+.t{
+    display: inline;
+    color: lightgrey;
+    position: relative;
+    bottom: 10px;
+}
+.hr3{
+    width: 40%;
+    display: inline-block;
+    border-bottom: 1px solid gainsboro;
+}
